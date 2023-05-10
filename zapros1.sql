@@ -1,4 +1,4 @@
-SELECT restaurant, item, calories
-FROM fastfood WHERE
-calories >= 500
+SELECT restaurant, item, (vit_a + vit_c)
+FROM fastfood
+ORDER BY (vit_a + vit_c) DESC
 ;
